@@ -1,16 +1,26 @@
 # custom_widget_savoria
 
-Savoria custom widget
+![Logo Savoria](https://www.savoria.co.id/images/logo/savoria-splash.png)
 
-## Getting Started
+Savoria custom widget untuk berbagai komponen UI internal Flutter project.
 
-This project is a starting point for a Flutter application.
+## Cara Pakai
 
-A few resources to get you started if this is your first Flutter project:
+Tambahkan ke `pubspec.yaml`:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```yaml
+'dependencies:
+    custom_widget_savoria:
+    git:
+      url: https://github.com/spyroxy/custom_widget_savoria.git'
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+- Cara Pakai
+import 'package:custom_widget_savoria/custom_widget_savoria.dart';
+
+CustomButton(
+  text: "Kirim",
+  color: Colors.redAccent,
+  onPressed: () {},
+);
+
