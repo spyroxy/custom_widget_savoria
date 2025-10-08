@@ -64,7 +64,7 @@ class CustomTextField extends StatelessWidget {
           decoration: InputDecoration(
               labelText: textInBox ? labelText : null,
               filled: true,
-              fillColor: Colors.white,
+              fillColor: colorFill,
               prefixIcon: prefix ? iconPrefix : null,
               suffixIcon: isPassword ? IconButton(
                   onPressed: onPressedPassword, icon: Icon(
