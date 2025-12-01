@@ -11,6 +11,7 @@ class CustomButtonStandard extends StatelessWidget {
         this.titleStyle = const TextStyle(color: Colors.white),
       this.title = '',
       this.icon,
+        this.mainAxisSize = MainAxisSize.min
       })
       : super(key: key);
 
@@ -22,6 +23,8 @@ class CustomButtonStandard extends StatelessWidget {
   final Color colorButtonIcon;
   final titleStyle;
   final icon;
+  final MainAxisSize mainAxisSize;
+
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +36,7 @@ class CustomButtonStandard extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(borderRadius)),
         ),
         child: Row(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: mainAxisSize,
           children: [
             Container(
               padding: const EdgeInsets.all(10),
