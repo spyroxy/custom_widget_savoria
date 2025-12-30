@@ -5,6 +5,7 @@ class CustomTextFieldStandard extends StatefulWidget {
   final String label;
   final IconData icon;
   final Color colorObscure;
+  final Color colorIcon;
 
   final bool obscure;
   final TextEditingController? controller;
@@ -16,6 +17,7 @@ class CustomTextFieldStandard extends StatefulWidget {
     required this.icon,
     this.obscure = false,
     this.colorObscure = Colors.grey,
+    this.colorIcon = Colors.grey,
     this.controller,
   });
 
@@ -35,7 +37,6 @@ class _CustomInputFieldState extends State<CustomTextFieldStandard> {
 
   @override
   Widget build(BuildContext context) {
-    const purple = Color(0xFF3F2E8C);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,8 +58,8 @@ class _CustomInputFieldState extends State<CustomTextFieldStandard> {
               Container(
                 width: 50,
                 height: 55,
-                decoration: const BoxDecoration(
-                  color: purple,
+                decoration:  BoxDecoration(
+                  color: widget.colorIcon,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
