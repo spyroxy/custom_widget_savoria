@@ -25,7 +25,7 @@ class CustomSearchText extends StatelessWidget {
           fillColor: Theme.of(context).scaffoldBackgroundColor,
           suffixIcon: SizedBox(
             child: ElevatedButton(
-              style: ButtonStyle(backgroundColor:  MaterialStateProperty.all(Colors.redAccent),),
+              style: ButtonStyle(backgroundColor:  WidgetStateProperty.all(Colors.redAccent),),
               onPressed: onPressed,
               child:  const Icon(Icons.search, color: Colors.white,)
             ),
